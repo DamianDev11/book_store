@@ -69,7 +69,7 @@ router.get("/:id", async (req, res) => {
     return res.status(200).json(book);
   } catch (error) {
     console.log(error.message);
-    res.status(500).send({ message: error.message });
+    res.status(500).send({ message: "Could not find a book" });
   }
 });
 
